@@ -47,14 +47,17 @@ Open the project in Android Studio (Hedgehog or newer), make sure the Android ND
 
 ## Simulated CAN Signals
 
-| CAN ID | Signal | Range |
-|--------|--------|-------|
-| 0x100 | Vehicle Speed | 0-260 km/h |
-| 0x101 | Engine RPM | 0-8000 RPM |
-| 0x102 | Coolant Temperature | -40C to 150C |
-| 0x103 | Fuel Level | 0-100% |
-| 0x200 | HVAC Temperature | 16-30C |
-| 0x201 | Fan Speed | 0-7 |
-| 0x300 | OBD-II Diagnostic Code | Standard DTC |
+| PID/CAN ID | Signal | Notes |
+|---|---|---|
+| 0x0C | Engine RPM | Standard OBD-II PID |
+| 0x0D | Vehicle Speed | Standard OBD-II PID, 0-260 km/h |
+| 0x05 | Coolant Temperature | Standard OBD-II PID, -40C to 215C |
+| 0x11 | Throttle Position | Standard OBD-II PID, 0-100% |
+| 0x2F | Fuel Level | Standard OBD-II PID, 0-100% |
+| 0x04 | Engine Load | Standard OBD-II PID, 0-100% |
+| 0xA0-0xA4 | Odometer, Trip Distance, Trip Duration, Fuel Consumed, Avg Speed | Custom extended PIDs |
+| 0x3B0 | HVAC Control | Set temp, fan speed, A/C, recirc |
+| 0x7DF / 0x7E8 | OBD-II Request / Response | Diagnostic trouble codes |
 
 This project was built as a learning exercise to better understand Android system design, automotive software architecture, and real-time data processing.
+
