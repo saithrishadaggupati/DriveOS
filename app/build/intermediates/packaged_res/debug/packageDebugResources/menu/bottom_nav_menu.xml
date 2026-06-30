@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_engine"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/hvacFragment"
+        android:icon="@drawable/ic_temp"
+        android:title="HVAC" />
+
+    <item
+        android:id="@+id/diagnosticsFragment"
+        android:icon="@drawable/ic_engine"
+        android:title="Diagnostics" />
+
+    <item
+        android:id="@+id/tripComputerFragment"
+        android:icon="@drawable/ic_fuel"
+        android:title="Trip" />
+
+</menu>

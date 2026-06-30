@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DriveOS</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="hvac">HVAC</string>
+    <string name="diagnostics">Diagnostics</string>
+    <string name="trip">Trip</string>
+    <string name="speed_unit">km/h</string>
+    <string name="rpm_unit">RPM</string>
+    <string name="temp_unit">°C</string>
+    <string name="fuel_unit">%</string>
+</resources>

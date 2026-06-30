@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.driveos.dashboard.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/hvacFragment"
+        android:name="com.driveos.dashboard.ui.dashboard.HVACFragment"
+        android:label="HVAC"
+        tools:layout="@layout/fragment_hvac" />
+
+    <fragment
+        android:id="@+id/diagnosticsFragment"
+        android:name="com.driveos.dashboard.ui.dashboard.DiagnosticsFragment"
+        android:label="Diagnostics"
+        tools:layout="@layout/fragment_diagnostics" />
+
+    <fragment
+        android:id="@+id/tripComputerFragment"
+        android:name="com.driveos.dashboard.ui.dashboard.TripComputerFragment"
+        android:label="Trip Computer"
+        tools:layout="@layout/fragment_trip" />
+
+</navigation>
